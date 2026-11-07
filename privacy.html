@@ -20,7 +20,7 @@
 
 <main class="doc">
   <h1>Privacy Policy</h1>
-  <p><em>Effective date: September 26, 2026</em></p>
+  <p><em>Effective date: November 7, 2026</em></p>
 
   <p class="summary"><strong>In short:</strong> ImageLocate analyses your photos on your device. There are no accounts, no analytics, no advertising and no tracking, and we — NAV-INT-LLC, the publisher — receive none of your data. Your photos are not uploaded, unless you switch on Apple's Private Cloud Compute, which is off by default. Optional online lookups send public services only short text, coordinates or dates, to answer that lookup.</p>
 
@@ -31,6 +31,8 @@
 
   <h2>Your photos</h2>
   <p>You choose photos through Apple's photo picker, or take one with the camera; the app sees only the photos you choose. It reads their metadata — for example when a photo was taken and, if present, where — and analyses the picture on your device with Apple's frameworks: text recognition, scene and object detection, geometry, and Apple's on-device language model.</p>
+  <p><strong>Adding a location to a photo.</strong> When a photo from your library has no location of its own and the app's answer is precise enough, you can ask it to save the estimated location into that photo, so Photos shows it on its map. The first time, iOS asks you to allow ImageLocate to change your photo library; the app then writes the coordinate into that one photo's metadata, on your device. Nothing else in your library is read or changed, and you can edit or remove the location in Photos. If you never use the feature, the app never asks for this permission.</p>
+  <p><strong>Shortcuts and Siri.</strong> The "Locate Photo" shortcut runs the same analysis on a photo a shortcut hands to it, on your device, and keeps the result in the app's history. It uses the same online lookups, if you have them switched on.</p>
   <p>The app keeps a history of your analyses — the results and a small thumbnail of each photo — in the app's storage on your device. It also keeps "personal landmarks": a compact visual fingerprint (not the photo) of photos you have confirmed with a hint, so similar photos can be recognised later. Neither is uploaded or synced. You can delete history entries and personal landmarks in the app, and deleting the app deletes everything it stored.</p>
 
   <h2>Apple services built into iOS</h2>
@@ -45,7 +47,7 @@
   <p>With <strong>Online enrichment</strong> switched on in Settings (it is on by default), the app may send the following to public services to improve a result. Each can be switched off individually, or all of them at once. None of these requests contains your photo, your name, or any account, device or advertising identifier.</p>
   <table>
     <tr><th>Service</th><th>What is sent</th><th>Why</th></tr>
-    <tr><td>Apple Maps</td><td>Business or street names read in the photo, and an area to search</td><td>Find those places on the map</td></tr>
+    <tr><td>Apple Maps</td><td>Business or street names read in the photo, and an area to search; for a precise answer, its coordinate</td><td>Find those places on the map, and show Apple's street-level imagery (Look Around) of the estimated spot</td></tr>
     <tr><td>Wikipedia and Wikimedia Commons</td><td>Place names or coordinates; public reference images are downloaded</td><td>Identify landmarks and nearby places</td></tr>
     <tr><td>OpenStreetMap (Nominatim, Overpass)</td><td>Names read in the photo, coordinates, an area to search</td><td>Match names to map locations and nearby features</td></tr>
     <tr><td>Open-Meteo</td><td>A coordinate and a date</td><td>Compare the weather in the photo with the weather recorded that day</td></tr>
